@@ -1,103 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TabouLait — Privacy policy</title>
-  <meta name="description" content="Privacy policy for TabouLait Discord bot." />
+  <title>Politique de confidentialité — TabouLait</title>
   <link rel="icon" href="assets/favicon.png" />
   <style>
-    :root {
-      --bg: #0f1115; --card: #161922; --text: #e7ecf3; --muted: #a8b3c7; --brand: #7aa2ff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; background: var(--bg); color: var(--text);
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-      line-height: 1.6;
-    }
-    header { border-bottom: 1px solid #222838; }
-    .nav {
-      max-width: 980px; margin: 0 auto; padding: 14px 20px;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; }
-    .logo img { width: 28px; height: 28px; border-radius: 6px; }
-    a { color: var(--brand); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    main { max-width: 980px; margin: 24px auto; padding: 0 20px 40px; }
-    h1 { font-size: 28px; margin-bottom: 10px; }
-    h2 { font-size: 20px; margin-top: 26px; }
-    p, li { color: var(--muted); }
-    .card { background: var(--card); border: 1px solid #242b3b; border-radius: 16px; padding: 22px; }
-    footer { border-top: 1px solid #222838; color: var(--muted); padding: 30px 20px; text-align: center; }
+    body { font-family: Arial, sans-serif; margin:0; background:#0f1115; color:#e7ecf3; }
+    header { background:#161922; padding:15px; }
+    header a { color:#7aa2ff; text-decoration:none; }
+    main { max-width:900px; margin:30px auto; padding:20px; }
+    h1 { font-size:28px; }
+    h2 { margin-top:20px; }
+    p, li { color:#a8b3c7; }
+    footer { text-align:center; padding:20px; border-top:1px solid #2a3348; color:#a8b3c7; }
   </style>
 </head>
 <body>
   <header>
-    <div class="nav">
-      <div class="logo">
-        <img src="assets/favicon.png" alt="TabouLait logo" />
-        <span>TabouLait</span>
-      </div>
-      <div>
-        <a href="index.html">Home</a>
-      </div>
-    </div>
+    <a href="index.html">← Retour à l’accueil</a>
   </header>
 
   <main>
-    <div class="card">
-      <h1>Privacy policy</h1>
-      <p>Last updated: <span id="lastUpdated"></span></p>
+    <h1>Politique de confidentialité</h1>
+    <p>Dernière mise à jour : <span id="lastUpdated"></span></p>
 
-      <h2>Summary</h2>
-      <ul>
-        <li><strong>Data minimization:</strong> The bot only processes the data required to perform commands and moderation actions.</li>
-        <li><strong>No sale of data:</strong> We do not sell or share personal data with third parties for marketing.</li>
-        <li><strong>Transparency:</strong> Configuration and logs aim to be readable and opt-in where possible.</li>
-      </ul>
+    <h2>Résumé</h2>
+    <ul>
+      <li>Le bot ne collecte que les données nécessaires à son fonctionnement.</li>
+      <li>Aucune donnée n’est vendue ou partagée à des tiers.</li>
+      <li>Les journaux de modération sont transparents et lisibles.</li>
+    </ul>
 
-      <h2>Data we process</h2>
-      <ul>
-        <li><strong>Discord identifiers:</strong> User IDs, Guild IDs, Channel IDs, Role IDs, and Message IDs used to execute bot features.</li>
-        <li><strong>Command content:</strong> Slash command names and options you provide to perform the requested action.</li>
-        <li><strong>Server configuration:</strong> Settings you apply (e.g., enabled modules, language, role mappings).</li>
-        <li><strong>Moderation records:</strong> Action type, target ID, moderator ID, timestamp, and reason (if provided).</li>
-      </ul>
+    <h2>Données traitées</h2>
+    <ul>
+      <li>Identifiants Discord (utilisateur, serveur, canal, rôle, message).</li>
+      <li>Contenu des commandes slash utilisées.</li>
+      <li>Configurations de serveur (modules activés, paramètres).</li>
+      <li>Logs de modération (type d’action, ID, modérateur, raison).</li>
+    </ul>
 
-      <h2>Data we do not collect by default</h2>
-      <ul>
-        <li><strong>Message bodies:</strong> We do not store full message content unless a specific feature explicitly requires it and you enable it.</li>
-        <li><strong>Sensitive categories:</strong> No biometric, health, or financial data is collected.</li>
-        <li><strong>Tracking:</strong> No third-party analytics on the bot itself. The website may use basic server logs.</li>
-      </ul>
+    <h2>Données non collectées</h2>
+    <ul>
+      <li>Messages complets (sauf si une fonction activée l’exige).</li>
+      <li>Données sensibles (santé, finances, biométrie).</li>
+      <li>Aucune analyse externe ou tracking tiers.</li>
+    </ul>
 
-      <h2>Retention</h2>
-      <p>Configuration and moderation logs are kept only as long as necessary for bot operation and server accountability. You may request deletion of server-specific configuration data via the support server or GitHub issues, and we will remove it after verifying server ownership.</p>
+    <h2>Durée de conservation</h2>
+    <p>Les données sont conservées uniquement le temps nécessaire au bon fonctionnement du bot. Vous pouvez demander la suppression des données de configuration via le serveur support.</p>
 
-      <h2>Legal bases and rights</h2>
-      <p>For users in the EU/EEA, processing is based on legitimate interests of server moderation and community management. You may have rights to access, rectify, or delete personal data, and to object to certain processing. Requests can be made via the contact methods below. We will respond within a reasonable timeframe.</p>
+    <h2>Sécurité</h2>
+    <p>Les accès sont contrôlés et les tokens sécurisés. Aucune donnée n’est exposée publiquement.</p>
 
-      <h2>Security</h2>
-      <p>We use access controls and minimize stored data. API tokens and credentials are stored securely and not exposed publicly.</p>
-
-      <h2>Children</h2>
-      <p>TabouLait is intended for Discord users who meet Discord’s minimum age requirements. We do not knowingly collect data from children under applicable age thresholds.</p>
-
-      <h2>Third parties</h2>
-      <p>The bot interacts with the Discord API. Discord’s handling of data is governed by their own policies. When optional integrations are enabled (e.g., webhooks or status pages), data shared to those services is subject to their policies.</p>
-
-      <h2>Contact</h2>
-      <p>For privacy requests, takedowns, or questions, open an issue on the GitHub repository or contact us via the support server.</p>
-
-      <h2>Changes to this policy</h2>
-      <p>We may update this policy to reflect changes to the bot or legal requirements. The “Last updated” date will be adjusted, and material changes will be announced on the support server.</p>
-    </div>
+    <h2>Contact</h2>
+    <p>Pour toute question ou demande, rejoignez le serveur support : <a href="https://discord.gg/z42gd8qwZa" target="_blank">discord.gg/z42gd8qwZa</a></p>
   </main>
 
   <footer>
-    © <span id="y"></span> TabouLait • <a href="index.html">Home</a>
+    © <span id="y"></span> TabouLait
   </footer>
 
   <script>
