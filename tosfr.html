@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conditions d’utilisation — TabouLait</title>
+  <link rel="icon" href="assets/favicon.png" />
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; background:#0f1115; color:#e7ecf3; }
+    header { background:#161922; padding:15px; }
+    header a { color:#7aa2ff; margin-right:15px; text-decoration:none; }
+    main { max-width:900px; margin:30px auto; padding:20px; }
+    h1 { font-size:28px; }
+    h2 { margin-top:20px; }
+    p, li { color:#a8b3c7; }
+    footer { text-align:center; padding:20px; border-top:1px solid #2a3348; color:#a8b3c7; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="indexfr.html">Accueil</a>
+    <a href="tos.html">EN</a>
+  </header>
 
+  <main>
+    <h1>Conditions d’utilisation</h1>
+    <p>Dernière mise à jour : <span id="lastUpdated"></span></p>
+
+    <h2>Utilisation</h2>
+    <ul>
+      <li>En invitant TabouLait sur votre serveur, vous acceptez ces conditions.</li>
+      <li>Le bot est fourni « tel quel », sans garantie de disponibilité permanente.</li>
+      <li>Vous devez respecter les règles de Discord et les lois applicables.</li>
+    </ul>
+
+    <h2>Responsabilités</h2>
+    <ul>
+      <li>Les administrateurs de serveur sont responsables de l’usage du bot dans leur communauté.</li>
+      <li>TabouLait ne peut être tenu responsable des abus ou mauvaises utilisations.</li>
+    </ul>
+
+    <h2>Limitations</h2>
+    <ul>
+      <li>TabouLait est un bot troll et fun, mais certaines fonctions (tickets, sondages, giveaways) doivent être utilisées avec discernement.</li>
+      <li>Nous nous réservons le droit de désactiver le bot sur un serveur en cas d’abus manifeste.</li>
+    </ul>
+
+    <h2>Modifications</h2>
+    <p>Ces conditions peuvent être mises à jour. Les changements importants seront annoncés sur le serveur support.</p>
+  </main>
+
+  <footer>
+    © <span id="y"></span> TabouLait • <a href="tos.html">EN</a>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('lastUpdated').textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
