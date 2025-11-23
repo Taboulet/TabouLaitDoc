@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Politique de confidentialité — TabouLait</title>
+  <link rel="icon" href="assets/favicon.png" />
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; background:#0f1115; color:#e7ecf3; }
+    header { background:#161922; padding:15px; }
+    header a { color:#7aa2ff; margin-right:15px; text-decoration:none; }
+    main { max-width:900px; margin:30px auto; padding:20px; }
+    h1 { font-size:28px; }
+    h2 { margin-top:20px; }
+    p, li { color:#a8b3c7; }
+    footer { text-align:center; padding:20px; border-top:1px solid #2a3348; color:#a8b3c7; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="indexfr.html">Accueil</a>
+    <a href="privacy.html">EN</a>
+  </header>
+
+  <main>
+    <h1>Politique de confidentialité</h1>
+    <p>Dernière mise à jour : <span id="lastUpdated"></span></p>
+
+    <h2>Résumé</h2>
+    <ul>
+      <li>Le bot ne collecte que les données nécessaires à son fonctionnement.</li>
+      <li>Aucune donnée n’est vendue ou partagée à des tiers.</li>
+      <li>Les journaux de modération sont transparents et lisibles.</li>
+    </ul>
+
+    <h2>Données traitées</h2>
+    <ul>
+      <li>Identifiants Discord (utilisateur, serveur, canal, rôle, message).</li>
+      <li>Contenu des commandes slash utilisées (<strong>/ticket-panel</strong>, <strong>/sondage</strong>, <strong>/givesomething</strong>).</li>
+      <li>Configurations de serveur.</li>
+      <li>Logs de modération.</li>
+    </ul>
+
+    <h2>Durée de conservation</h2>
+    <p>Les données sont conservées uniquement le temps nécessaire au bon fonctionnement du bot. Vous pouvez demander la suppression via le serveur support.</p>
+
+    <h2>Sécurité</h2>
+    <p>Les accès sont contrôlés et les tokens sécurisés. Aucune donnée n’est exposée publiquement.</p>
+
+    <h2>Contact</h2>
+    <p>Pour toute question ou demande, rejoignez le serveur support : <a href="https://discord.gg/z42gd8qwZa" target="_blank">discord.gg/z42gd8qwZa</a></p>
+  </main>
+
+  <footer>
+    © <span id="y"></span> TabouLait • <a href="privacy.html">EN</a>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('lastUpdated').textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
